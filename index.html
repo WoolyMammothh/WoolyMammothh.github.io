@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML/CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="logo"><a href="index.html">CHEAT.</a></div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+      </ul>
+    </nav>
+    <a href="index.html">
+      <div class="back-home">&uarr;</div>
+    </a>
+  </header>
+  <main>
+    <section class="landing">
+      <div class="title">
+        <h1>
+          The Only HTML/CSS Resource You'll Ever Need.
+        </h1>
+        <h3>Find out how 1,000s of Developers are using our site 
+          to master HTML & CSS within days!</h2>
+        <a href="#html"><button class="cta">Learn HTML</button></a>
+        <a href="#css"><button class="cta">Learn CSS</button></a>
+      </div>
+    </section>
+    <section id="html">
+      <div class="title">
+        <h2>The HTML Cheat Sheet</h2>
+        <h3>
+          We've put together a list of
+          basic HTML tags, attributes and 
+          general syntax in an organised table
+        </h3>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Tag</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="7">Basic Structure</th>
+              <td><code class="tag">< !DOCTYPE html ></code></td>
+              <td>Defines the document type and version </td>
+              <td>< !DOCTYPE html ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< html ></html></code></td>
+              <td>Root element of an HTML page </td>
+              <td>< html lang="en" ></html></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< head ></head></code></td>
+              <td>Contains metadata about the document </td>
+              <td>< head ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< title ></title></code></td>
+              <td>Sets the title of the web page  </td>
+              <td>html lang="en"</td>
+            </tr>
+            <tr>
+              <td><code class="tag">< meta ></code></td>
+              <td>Provides metadata (e.g., character set) </td>
+              <td>< meta charset="UTF-8" ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< link ></code></td>
+              <td>Links to external resources (e.g., CSS) </td>
+              <td>< link rel="stylesheet" href="styles.css" ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< script ></script></code></td>
+              <td>Embeds or references JavaScript code </td>
+              <td>< script src="script.js" ></script ></td>
+            </tr>
+            <tr>
+              <th colspan="4"></th>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="7">Document Structure</th>
+              <td><code class="tag">< header ></code></td>
+              <td>Represents a container for page header </td>
+              <td>< header ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< nav ></code></td>
+              <td>Defines a navigation menu  </td>
+              <td>< nav ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< main ></code></td>
+              <td>Contains the main content of the page </td>
+              <td>< main ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< section ></code></td>
+              <td>Defines a section of content  </td>
+              <td>< section ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< article ></code></td>
+              <td>Represents a self-contained article </td>
+              <td>< article ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< aside ></code></td>
+              <td>Contains content related to the main content </td>
+              <td>< aside ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< footer ></code></td>
+              <td>Represents the footer of a document </td>
+              <td>< footer ></td>
+            </tr>
+            <tr>
+              <th colspan="4"></th>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="9">Text Elements</th>
+              <td><code class="tag">< p ></code></td>
+              <td>Defines a paragraph of text</td>
+              <td>< p>This is a paragraph.< /p> ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< h1 > - < h6 ></code></td>
+              <td>Headings with decreasing importance</td>
+              <td>< h1>Heading 1< /h1 ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< a ></code></td>
+              <td>Creates hyperlinks</td>
+              <td>< a href="https://example.com">Link< /a ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< img ></code></td>
+              <td>Embeds images </td>
+              <td>< img src="image.jpg" alt="Description" ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< ul ></code></td>
+              <td>Defines an unordered (bulleted) list</td>
+              <td>< ul> < li> Item 1 < /li> < /ul ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< ol ></code></td>
+              <td>Defines an ordered (numbered) list</td>
+              <td>< ol > < li > Item 1 < /li > < /ol ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< li ></code></td>
+              <td>Represents a list item</td>
+              <td>< li > Item < /li ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< br ></code></td>
+              <td>Inserts a line break</td>
+              <td>< Hello < br > World ></td>
+            </tr>
+            <tr>
+              <td><code class="tag">< hr ></code></td>
+              <td>Creates a horizontal rule</td>
+              <td>< hr ></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!---------------CSS Cheat Sheet------------------->
+
+    <section id="css">
+      <div class="title">
+        <h2>CSS Cheat Sheet</h2>
+        <h3>
+          We've put together a list of
+          basic CSS properties, attributes and 
+          general syntax in an organised table
+        </h3>
+      </div>
+      <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" rowspan="4">Selectors</th>
+                    <td><code class="tag">element</code></td>
+                    <td>Selects all elements of a specified type</td>
+                    <td><code>p</code> selects all paragraphs</td>
+                </tr>
+                <tr>
+                    <td><code class="tag">.class</code></td>
+                    <td>Selects all elements with a specific class</td>
+                    <td><code>.btn</code> selects all elements with class "btn"</td>
+                </tr>
+                <tr>
+                  <td><code class="tag">#id</code></td>
+                  <td>Selects an element with a specific ID</td>
+                  <td><code>#btn</code> selects the element with id of "btn"</td>
+                </tr>
+                <tr>
+                  <td><code class="tag">*</code></td>
+                  <td>Selects all elements on the page</td>
+                  <td><code>* { margin: 0; padding: 0; }</code></td>
+                </tr>
+                <tr>
+                  <th colspan="4"></th>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="5">Properties</th>
+                    <td><code class="tag">color</code></td>
+                    <td>Sets the text color</td>
+                    <td><code>color: red;</code></td>
+                </tr>
+                <tr>
+                    <td><code class="tag">font-size</code></td>
+                    <td>Sets the font size</td>
+                    <td><code>font-size: 16px;</code></td>
+                </tr>
+                <tr>
+                    <td><code class="tag">font-family</code></td>
+                    <td>Sets the font family</td>
+                    <td><code>font-family: Arial, sans-serif;</code></td>
+                </tr>
+                <tr>
+                    <td><code class="tag">background-color</code></td>
+                    <td>Sets the background color</td>
+                    <td><code>background-color: #f0f0f0;</code></td>
+                </tr>
+                <tr>
+                    <td><code class="tag">margin</code></td>
+                    <td>Sets the margin space</td>
+                    <td><code>margin: 10px;</code></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+  <footer></footer>
+</body>
+</html>
